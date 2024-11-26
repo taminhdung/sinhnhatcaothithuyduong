@@ -153,6 +153,9 @@
     </div>
 </body>
 <script>
+    window.onload=function(){
+        alert("Trình duyệt của bạn đã chặn âm thanh.\nVui lòng click 1 cái vào màn hình để cấp quyền.");
+    }
     document.addEventListener('click', function(event) {
         const audio = document.getElementById('player');
         audio.play();
