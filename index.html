@@ -153,6 +153,10 @@
     </div>
 </body>
 <script>
+    document.addEventListener('click', function(event) {
+        const audio = document.getElementById('player');
+        audio.play();
+    });
     let datetxt = "04/12/2007";
     let datatxtletter = "Happy birthday! Today is a special day for you. I'm just here to tell you that I wish you a happy birthday, filled with joy, overcoming all the troubles in this world. Beautiful memories will always be with you. Also, I have a gift for you. I wonder if you have received it yet? I hope you will like it. 💕";
     let titleLetter = "To my special someone";
@@ -263,10 +267,10 @@
     const fcMobile = mobile()
     if(window.innerWidth < 768){
         setTimeout(()=>{
-            fcMobile.timeout("26", document.querySelector(".day"))
+            fcMobile.timeout("04", document.querySelector(".day"))
         },5000)
         setTimeout(()=>{
-            fcMobile.timeout("10", document.querySelector(".month"))
+            fcMobile.timeout("", document.querySelector(".month"))
         },6000)
     }
     
